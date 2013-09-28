@@ -1,0 +1,6 @@
+[submodule "vendor/h5bp"]
+	path = vendor/h5bp
+	url = git@github.com:h5bp/html5-boilerplate.git
+[submodule "vendor/Flatstrap-for-bootstrap-3"]
+	path = vendor/Flatstrap-for-bootstrap-3
+	url = git@github.com:littlesparkvt/Flatstrap-for-Bootstrap-3.git
