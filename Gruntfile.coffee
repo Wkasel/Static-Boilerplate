@@ -26,7 +26,7 @@ module.exports = (grunt) ->
         bare: true
       compile:
         files:
-          "js/src/app.js": ["js/coffee/app.coffee"]
+          "js/src/app.js": ["js/coffee/*.coffee"]
     less:
       compile:
         options:
