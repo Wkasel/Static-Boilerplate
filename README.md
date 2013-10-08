@@ -30,11 +30,11 @@ That's it! It will compile the Coffeescript, Less, Jade, and generated JS from C
 
 ### Push To Heroku
 ---
-  rm -rf .git
-  git init
-  echo 'node_modules' >> '.gitignore'
-  git add .
-  git commit -am "first commit"
-  heroku create
-  git push heroku master
-  heroku open
+  `rm -rf .git`
+  `git init`
+  `echo 'node_modules' >> '.gitignore'`
+  `git add .`
+  `git commit -am "first commit"`
+  `heroku create`
+  `git push heroku master`
+  `heroku open`
