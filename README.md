@@ -27,3 +27,14 @@ That's it! It will compile the Coffeescript, Less, Jade, and generated JS from C
 *Javascript -> [coffeescript](js/coffee)
 *Templates -> [jade](templates/jade) (compiles to /static (handlebars))
 *CSS -> [less](css/less)
+
+### Push To Heroku
+---
+  rm -rf .git
+  git init
+  echo 'node_modules' >> '.gitignore'
+  git add .
+  git commit -am "first commit"
+  heroku create
+  git push heroku master
+  heroku open
