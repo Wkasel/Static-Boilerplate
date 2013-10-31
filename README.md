@@ -30,11 +30,19 @@ That's it! It will compile the Coffeescript, Less, Jade, and generated JS from C
 
 ### Setup to deploy to heroku
 
+    mkdir project_name && cd project_name
+    git clone --recursive git@github.com:Wkasel/Static-Boilerplate.git .
     rm -rf .git
     git init
     echo 'node_modules' >> '.gitignore'
+    (sudo) npm install
+    grunt
     git add .
     git commit -am "first commit"
     heroku create
     git push heroku master
     heroku open
+    ---
+    (in new window) grunt watch
+    ---
+    start coding!
