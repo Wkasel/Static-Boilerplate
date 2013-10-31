@@ -12,10 +12,10 @@ module.exports = (grunt) ->
           "js/vendor/h5bp_helper.js","js/vendor/h5bp_plugins.js","js/vendor/underscore-min.js",
           "js/vendor/backbone-min.js","js/vendor/handlebars.runtime.js",
           #<bootstrap>
-          "vendor/Flatstrap-for-bootstrap-3/js/transition.js", "vendor/Flatstrap-for-bootstrap-3/js/alert.js", "vendor/Flatstrap-for-bootstrap-3/js/button.js"
-          "vendor/Flatstrap-for-bootstrap-3/js/carousel.js", "vendor/Flatstrap-for-bootstrap-3/js/collapse.js", "vendor/Flatstrap-for-bootstrap-3/js/dropdown.js"
-          "vendor/Flatstrap-for-bootstrap-3/js/modal.js", "vendor/Flatstrap-for-bootstrap-3/js/tooltip.js", "vendor/Flatstrap-for-bootstrap-3/js/popover.js"
-          "vendor/Flatstrap-for-bootstrap-3/js/scrollspy.js", "vendor/Flatstrap-for-bootstrap-3/js/tab.js", "vendor/Flatstrap-for-bootstrap-3/js/affix.js"
+          "vendor/bootstrap/js/transition.js", "vendor/bootstrap/js/alert.js", "vendor/bootstrap/js/button.js"
+          "vendor/bootstrap/js/carousel.js", "vendor/bootstrap/js/collapse.js", "vendor/bootstrap/js/dropdown.js"
+          "vendor/bootstrap/js/modal.js", "vendor/bootstrap/js/tooltip.js", "vendor/bootstrap/js/popover.js"
+          "vendor/bootstrap/js/scrollspy.js", "vendor/bootstrap/js/tab.js", "vendor/bootstrap/js/affix.js"
           #</bootstrap>
         ],
         app: [
@@ -37,7 +37,7 @@ module.exports = (grunt) ->
       scripts:
         files: [
           "<%= js.files.dependencies %>", #dependencies
-          "css/less/*.less","vendor/Flatstrap-for-bootstrap-3/less/*.less", #less
+          "css/less/*.less","vendor/bootstrap/less/*.less", #less
           "js/coffee/*.coffee", #coffee
           "templates/js/jade/*.jade", "templates/js/jade/**/*.jade",
            "templates/js/jade/**/**/*.jade",   

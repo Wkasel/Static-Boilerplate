@@ -4,3 +4,6 @@
 [submodule "vendor/Flatstrap-for-bootstrap-3"]
 	path = vendor/Flatstrap-for-bootstrap-3
 	url = git@github.com:littlesparkvt/Flatstrap-for-Bootstrap-3.git
+[submodule "vendor/bootstrap"]
+	path = vendor/bootstrap
+	url = git@github.com:twbs/bootstrap.git
