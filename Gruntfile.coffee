@@ -3,7 +3,7 @@ module.exports = (grunt) ->
     pkg: grunt.file.readJSON("package.json")
     meta:
       version: "<%= pkg.version %>"
-      banner: "* Reserved Web Site - v<%= pkg.version %>"+
+      banner: "/* Reserved Web Site - v<%= pkg.version %>"+
         "* generated: <%= grunt.template.today(\"yyyy-mm-dd - HH:mm:ss.sss\") %>*/\n\n\n"
     js: 
       files:
@@ -95,7 +95,14 @@ module.exports = (grunt) ->
     cssmin:
       compress:
         files:
-          "css/app.min.css": "css/app.css"        
+          "css/app.min.css": "css/app.css"
+    
+    # Todo: Implement build protocol to make build less manual
+    # copy:
+    #   
+    # clean:
+    #   init: ['.git']
+        
       
   grunt.loadNpmTasks "grunt-contrib"
   grunt.loadNpmTasks "grunt-contrib-less"
@@ -106,5 +113,9 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-handlebars"
   grunt.loadNpmTasks "grunt-contrib-cssmin"
   grunt.loadNpmTasks "grunt-contrib-uglify"
+  grunt.loadNpmTasks "grunt-contrib-copy"
+  grunt.loadNpmTasks "grunt-contrib-clean"
+
   grunt.registerTask "default", ["coffee","less","jade","handlebars", "concat"]
-  grunt.registerTask "deploy", ["coffee","less","jade","handlebars", "concat", "uglify", "cssmin"]
+  grunt.registerTask "deploy", ["coffee","less","jade","handlebars", "concat", "uglify", "cssmin"
+  grunt.registerTask "init", ["clean:init", "copy:init"]
