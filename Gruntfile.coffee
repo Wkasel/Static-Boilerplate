@@ -113,9 +113,9 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-handlebars"
   grunt.loadNpmTasks "grunt-contrib-cssmin"
   grunt.loadNpmTasks "grunt-contrib-uglify"
-  grunt.loadNpmTasks "grunt-contrib-copy"
-  grunt.loadNpmTasks "grunt-contrib-clean"
+  # grunt.loadNpmTasks "grunt-contrib-copy"
+  # grunt.loadNpmTasks "grunt-contrib-clean"
 
   grunt.registerTask "default", ["coffee","less","jade","handlebars", "concat"]
-  grunt.registerTask "deploy", ["coffee","less","jade","handlebars", "concat", "uglify", "cssmin"
-  grunt.registerTask "init", ["clean:init", "copy:init"]
+  grunt.registerTask "deploy", ["coffee","less","jade","handlebars", "concat", "uglify", "cssmin"]
+  # grunt.registerTask "init", ["clean:init", "copy:init"]
