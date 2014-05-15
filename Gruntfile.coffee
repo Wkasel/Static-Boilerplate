@@ -9,7 +9,7 @@ module.exports = (grunt) ->
       files:
         dependencies: [
           "js/vendor/modernizr-2.6.2.min.js","js/vendor/jquery-2.0.3.js",
-          "js/vendor/h5bp_helper.js","js/vendor/h5bp_plugins.js","js/vendor/underscore-min.js",
+          "js/vendor/h5bp_helper.js","js/vendor/h5bp_plugins.js","js/vendor/underscore.min.js",
           "js/vendor/backbone-min.js","js/vendor/handlebars.runtime.js",
           #<bootstrap>
           "vendor/bootstrap/js/transition.js", "vendor/bootstrap/js/alert.js", "vendor/bootstrap/js/button.js"
